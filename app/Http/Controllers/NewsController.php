@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class NewsController extends Controller
 {
-    private $apikey = "f84143a15370430ca3520550e2459063";
+    private $apikey = "INSERT_YOUR_API_KEY_HERE";
 
     private function getDataFromHttpApiRequest($url)
     {
