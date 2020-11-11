@@ -1,22 +1,20 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
+
 /*
 |--------------------------------------------------------------------------
-| Application Routes
+| Web Routes
 |--------------------------------------------------------------------------
 |
-| Here is where you can register all of the routes for an application.
-| It is a breeze. Simply tell Lumen the URIs it should respond to
-| and give it the Closure to call when that URI is requested.
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider within a group which
+| contains the "web" middleware group. Now create something great!
 |
 */
 
-// $router->get('/', function () use ($router) {
-//     return $router->app->version();
-// });
-
-$router->get('/', 'NewsController@index');
-$router->get('/category/{category}', 'NewsController@viewNewsbyCategory');
-$router->get('/headline', 'NewsController@viewHeadlineNews');
-$router->get('/search', 'NewsController@viewSearchResult');
-$router->get('/news/{news_title}', 'NewsController@viewNewsDetail');
+Route::get('/', 'NewsController@index');
+Route::get('/category/{category}', 'NewsController@viewNewsbyCategory');
+Route::get('/headline', 'NewsController@viewHeadlineNews');
+Route::get('/search', 'NewsController@viewSearchResult');
+Route::post('/news/{news_title}', 'NewsController@viewNewsDetail');
