@@ -10,3 +10,4 @@ Simple news website using [newsAPI.org](https://newsapi.org/) API. Build with [l
 ```
     $apikey = "INSERT_YOUR_API_KEY_HERE";
 ```
+- You're ready!
