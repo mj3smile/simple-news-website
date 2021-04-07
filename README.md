@@ -1,4 +1,4 @@
-# Simple News Website
+# Newsku
 
 Simple news website using [newsAPI.org](https://newsapi.org/) API. Build with [laravel](https://laravel.com) v.8.13.0. Visit https://news.mujahid.my.id for Demo!
 
